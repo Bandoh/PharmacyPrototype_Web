@@ -1,0 +1,19 @@
+#cardview{
+    align-items: center;
+    margin-top: 10%;
+}
+
+#cardhead{
+    height: 50px;
+}
+#loginbtn{
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+#registerbtn{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+}

@@ -18,7 +18,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #007bff;
+  --primary: #00ffff;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -26,6 +26,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --primarysecond:#00b0ff;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -6075,7 +6076,11 @@ button.close {
 }
 
 .bg-primary {
-  background-color: #007bff !important;
+  background-color: #00ffff !important;
+}
+
+.bg-primarysecond{
+  background-color: #00b0ff !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
