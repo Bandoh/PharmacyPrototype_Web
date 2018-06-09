@@ -1,10 +1,18 @@
 #cardview{
     align-items: center;
-    margin-top: 10%;
+}
+#cardd{
+    align-items: center;
+    margin-top: 15%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 
 #cardhead{
     height: 50px;
+}
+
+#head{
+    margin-top: 4%;
 }
 #loginbtn{
     margin-right: 10%;
