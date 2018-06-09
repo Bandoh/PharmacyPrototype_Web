@@ -6,6 +6,13 @@
     margin-top: 15%;
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
+#body{
+    background-image: url("../../IMAGES/hand-838975_1920.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.92;
+}
 
 #cardhead{
     height: 50px;
