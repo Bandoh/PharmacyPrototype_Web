@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="./CSS/animate.css">
+    <link href="./CSS/bootstrap.css" rel="stylesheet">
+    <link href="./CSS/Styles/main.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/Styles/main.css" />
+</head>
+
+<body id="bodyRegister">
+
+    <div class="container">
+        <div class="row centered-form justify-content-center">
+            <div class="col-xs-12 col-sm-10 col-md-9 col-lg-6 col-xl-6 col-sm-offset-2 col-md-offset-6">
+                <div class="card animated bounceInUp">
+                    <div class="" id="cardhead">
+                        <div class="text-center text-info" id="head">
+                            <h5>Virtual Pharmacy Registration</h5>
+                        </div>
+                    </div>
+
+                        <div class="card-body">
+                            <form role="form">
+                                <div class="row">
+                                    <!--Owner's first name and last name-->
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" name="ownerFName" id="ownerFName" class="form-control input-sm" placeholder="Owner's First Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" name="ownerLName" id="ownerLName" class="form-control input-sm" placeholder="Owner's Last Name">
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                        <input name="OwnerE-mail" type="email" class="form-control input-sm" id="ownerEmail" aria-describedby="Owner's Email" placeholder="Owner's email">
+                                </div>
+                                <div class="form-group">
+                                        <input name="phName" type="text" class="form-control input-sm" id="phName" aria-describedby="Pharmacy Name" placeholder="Pharmacy Name">
+                                </div>
+                                <div class="form-group">
+                                        <input name="phEmail" type="email" class="form-control input-sm" id="phEmail" aria-describedby="Pharmacy Email" placeholder="Pharmacy email">
+                                </div>
+                                <div class="form-group">
+                                        <input name="phPassword" type="password" class="form-control input-sm" id="phPassword" aria-describedby="Pharmacy Password" placeholder="Create a password">
+                                </div>
+                                <div class="form-group">
+                                        <input name="phPasswordConfirm" type="password" class="form-control input-sm" id="phPasswordConfirm" aria-describedby="Pharmacy Password confirmation" placeholder="Retype password">
+                                </div>
+
+                                <label style="margin-left: 5px;">Pharmacy Registration Details</label>
+                                <div class="row">
+                                          
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">         
+                                                <input name="phRegistrationNumber" type="text" class="registrationInput" id="" aria-describedby="Pharmacy Registration Number" placeholder="Registration Number">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                            <div class="form-group">       
+                                                    <input name="phRegistrationDate" type="date" class="registrationInput" id="phDate" aria-describedby="Pharmacy Registration date" >
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                            <input type="submit" value="Register" class="btn btn-outline-dark btn-block">
+                                    </div>
+                                </div> 
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./JAVASCRIPT/jquery-3.3.1.min.js"></script>
+    <script src="./JAVASCRIPT/popper.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

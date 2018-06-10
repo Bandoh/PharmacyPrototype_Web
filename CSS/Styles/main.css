@@ -1,11 +1,3 @@
-#cardview{
-    align-items: center;
-}
-#cardd{
-    align-items: center;
-    margin-top: 15%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
-}
 #body{
     background-image: url("../../IMAGES/hand-838975_1920.jpg");
     background-attachment: fixed;
@@ -13,6 +5,24 @@
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.92;
+}
+
+#bodyRegister{
+    background-color:white;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.92;
+}
+
+#cardview{
+    align-items: center;
+}
+#cardd{
+    align-items: center;
+    margin-top: 15%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 
 #cardhead{
@@ -32,4 +42,21 @@
     margin-top: 5%;
     margin-left: 10%;
     margin-bottom: 1%;
+}
+
+#carddR{
+    align-items: center;
+    margin-top: 15%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    width: 50%;
+}
+
+
+.centered-form {
+    margin-top: 5%;
+
+}
+.centered-form .card{
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: rgba(0, 0, 0, 0.3)20px 20px 20px;
 }
