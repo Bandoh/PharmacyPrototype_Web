@@ -50,6 +50,14 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.8);
     width: 50%;
 }
+#prevBtn:hover{
+    background-color: gray;
+    color: #fff;
+}
+#nextBtn:hover{
+    background-color: green;
+    color: #fff;
+}
 
 
 .centered-form {
@@ -60,3 +68,12 @@
     background: rgba(255, 255, 255, 0.8);
     box-shadow: rgba(0, 0, 0, 0.3)20px 20px 20px;
 }
+
+.tab{
+    display: none;
+}
+.step.finish {
+    background-color: #4CAF50;
+}
+
+
