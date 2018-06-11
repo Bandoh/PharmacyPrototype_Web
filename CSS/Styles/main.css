@@ -1,4 +1,8 @@
-#body{
+#body {
+    opacity: 0.92;
+}
+
+#bodyRegister {
     background-color: white;
     background-attachment: fixed;
     background-position: center;
@@ -7,73 +11,66 @@
     opacity: 0.92;
 }
 
-#bodyRegister{
-    background-color:white;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.92;
-}
-
-#cardview{
+#cardview {
     align-items: center;
 }
-#cardd{
+
+#cardd {
     align-items: center;
     margin-top: 15%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
-#cardhead{
+#cardhead {
     height: 50px;
 }
 
-#head{
+#head {
     margin-top: 4%;
 }
-#loginbtn{
+
+#loginbtn {
     margin-right: 10%;
     margin-top: 5%;
     margin-bottom: 1%;
 }
 
-#registerbtn{
+#registerbtn {
     margin-top: 5%;
     margin-left: 10%;
     margin-bottom: 1%;
 }
 
-#carddR{
+#carddR {
     align-items: center;
     margin-top: 15%;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
     width: 50%;
 }
-#prevBtn:hover{
+
+#prevBtn:hover {
     background-color: gray;
     color: #fff;
 }
-#nextBtn:hover{
+
+#nextBtn:hover {
     background-color: green;
     color: #fff;
 }
 
-
 .centered-form {
     margin-top: 5%;
-
 }
-.centered-form .card{
+
+.centered-form .card {
     background: rgba(255, 255, 255, 0.8);
     box-shadow: rgba(0, 0, 0, 0.3)20px 20px 20px;
 }
 
-.tab{
+.tab {
     display: none;
 }
+
 .step.finish {
     background-color: #4CAF50;
 }
-
-

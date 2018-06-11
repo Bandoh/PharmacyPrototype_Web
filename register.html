@@ -25,127 +25,132 @@
                         </div>
                     </div>
 
-                        <div class="card-body">
-                            <form id="registerForm" role="form">
-                                   
-                                
-                                <!--Start of owner Details-->
+                    <div class="card-body">
+                        <form id="registerForm" role="form">
 
 
-                                <div class="tab">
-                                    <h5 class="text-center text-info">Owner Details:</h5>
-                                    <small style="color: red;">All fields on the form are required*</small>
-                                    <div class="row">
-                                        <!--Owner's first name and last name-->
-                                        <div class="col-xs-6 col-sm-6 col-md-6">
-
-                                            <div class="form-group">
-                                                <input type="text" name="ownerFName" id="ownerFName" class="form-control input-sm" placeholder="Owner's First Name">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-6 col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" name="ownerLName" id="ownerLName" class="form-control input-sm" placeholder="Owner's Last Name">
-                                                </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                            <input name="ownerEmail" type="email" class="form-control input-sm" id="ownerEmail" aria-describedby="Owner's Email" placeholder="Owner's email">
-                                    </div>
-                                    <div class="form-group">
-                                        <input name="ownerPhoneNumber" type="tel" class="form-control input-sm" id="ownerPhoneNumber" aria-describedby="Owner's Phone number" placeholder="Owner's Phone number">
-                                    </div>
-                                </div>
+                            <!--Start of owner Details-->
 
 
-                                                    <!--End of Owner Details-->
-                                                    <!--Start of Pharmacy Details-->
-                                <div class="tab">  
-                                        <h5 class="text-center text-info">Pharmacy Details:</h5>
-                                    <div class="form-group">
-                                            <input name="phName" type="text" class="form-control input-sm" id="phName" aria-describedby="Pharmacy Name" placeholder="Pharmacy Name">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <select name="Regions" class="form-control">
-                                            <option value="UpperWest">Upper West</option>
-                                            <option value="UpperEast">Upper East</option>
-                                            <option value="Northern">Northern</option>
-                                            <option value="Ashanti">Ashanti</option>
-                                            <option value="Central">Central</option>
-                                            <option value="Western">Western</option>
-                                            <option value="Eastern">Eastern</option>
-                                            <option value="BrongAhafo">Brong Ahafo</option>
-                                            <option value="Volta">Volta</option>
-                                            <option value="GreaterAccra">Greater Accra</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-group">
-                                            <input name="phEmail" type="email" class="form-control input-sm" id="phEmail" aria-describedby="Pharmacy Email" placeholder="Pharmacy email">
-                                    </div>
-                                    <small style="color: red;">You will be required to login with this email*</small>
-                                    <div class="form-group">
-                                            <input name="phEmailConfirm" type="email" class="form-control input-sm" id="phEmailConfirm" aria-describedby="Pharmacy Email" placeholder="Confirm email">
-                                    </div>
-
-                                    <div class="form-group">
-                                            <input name="phPassword" type="password" class="form-control input-sm" id="phPassword" aria-describedby="Pharmacy Password" placeholder="Create a password">
-                                    </div>
-                                    <div class="form-group">
-                                            <input name="phPasswordConfirm" type="password" class="form-control input-sm" id="phPasswordConfirm" aria-describedby="Pharmacy Password confirmation" placeholder="Retype password">
-                                    </div>
-
-                                    
-                                    <div class="row">
-                                            
-                                        <div class="col-xs-6 col-sm-6 col-md-6">
-                                            <div class="form-group">         
-                                                <input name="phRegistrationNumber" type="text" class="form-control" id="phRegistrationNumber" aria-describedby="Pharmacy Registration Number" placeholder="Registration Number">
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-6 col-md-6">
-                                                <div class="form-group">       
-                                                    <input name="phRegistrationDate" type="date" class="form-control" id="phRegistrationDate" aria-describedby="Pharmacy Registration date" >
-                                                </div>
-                                        </div>
-                                    </div>  
-                                
-                                </div>
-
-                                                    <!--End of Pharmacy Details-->
-                                                    <!--Start of Submit-->
-
-                                        
+                            <div class="tab">
+                                <h5 class="text-center text-info">Owner Details:</h5>
+                                <small style="color: red;">All fields on the form are required*</small>
                                 <div class="row">
+                                    <!--Owner's first name and last name-->
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                            <button type="button" id="prevBtn" onclick="nextPrev(-1)" class="form-control">Previous</button>
+
+                                        <div class="form-group">
+                                            <input type="text" name="ownerFName" id="ownerFName" class="form-control input-sm" placeholder="Owner's First Name">
+                                        </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-6">
-                                            <button type="button" id="nextBtn" onclick="nextPrev(1)" class="form-control">Next</button>
+                                        <div class="form-group">
+                                            <input type="text" name="ownerLName" id="ownerLName" class="form-control input-sm" placeholder="Owner's Last Name">
+                                        </div>
                                     </div>
                                 </div>
-                            
-                                
-                                <div style="text-align:center;margin-top:40px;">
-                                    <span class="step"></span>
-                                    <span class="step"></span>
-                                    <span class="step"></span>
-                                    <span class="step"></span>
-                                  </div>
-                            </form>
-                        </div>
+                                <div class="form-group">
+                                    <input name="ownerEmail" type="email" class="form-control input-sm" id="ownerEmail" aria-describedby="Owner's Email" placeholder="Owner's email">
+                                </div>
+                                <div class="form-group">
+                                    <input name="ownerPhoneNumber" type="tel" class="form-control input-sm" id="ownerPhoneNumber" aria-describedby="Owner's Phone number"
+                                        placeholder="Owner's Phone number">
+                                </div>
+                            </div>
+
+
+                            <!--End of Owner Details-->
+                            <!--Start of Pharmacy Details-->
+                            <div class="tab">
+                                <h5 class="text-center text-info">Pharmacy Details:</h5>
+                                <div class="form-group">
+                                    <input name="phName" type="text" class="form-control input-sm" id="phName" aria-describedby="Pharmacy Name" placeholder="Pharmacy Name">
+                                </div>
+
+                                <div class="form-group">
+                                    <select name="Regions" class="form-control">
+                                        <option value="UpperWest">Upper West</option>
+                                        <option value="UpperEast">Upper East</option>
+                                        <option value="Northern">Northern</option>
+                                        <option value="Ashanti">Ashanti</option>
+                                        <option value="Central">Central</option>
+                                        <option value="Western">Western</option>
+                                        <option value="Eastern">Eastern</option>
+                                        <option value="BrongAhafo">Brong Ahafo</option>
+                                        <option value="Volta">Volta</option>
+                                        <option value="GreaterAccra">Greater Accra</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <input name="phEmail" type="email" class="form-control input-sm" id="phEmail" aria-describedby="Pharmacy Email" placeholder="Pharmacy email">
+                                </div>
+                                <small style="color: red;">You will be required to login with this email*</small>
+                                <div class="form-group">
+                                    <input name="phEmailConfirm" type="email" class="form-control input-sm" id="phEmailConfirm" aria-describedby="Pharmacy Email"
+                                        placeholder="Confirm email">
+                                </div>
+
+                                <div class="form-group">
+                                    <input name="phPassword" type="password" class="form-control input-sm" id="phPassword" aria-describedby="Pharmacy Password"
+                                        placeholder="Create a password">
+                                </div>
+                                <div class="form-group">
+                                    <input name="phPasswordConfirm" type="password" class="form-control input-sm" id="phPasswordConfirm" aria-describedby="Pharmacy Password confirmation"
+                                        placeholder="Retype password">
+                                </div>
+
+
+                                <div class="row">
+
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input name="phRegistrationNumber" type="text" class="form-control" id="phRegistrationNumber" aria-describedby="Pharmacy Registration Number"
+                                                placeholder="Registration Number">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <input name="phRegistrationDate" type="date" class="form-control" id="phRegistrationDate" aria-describedby="Pharmacy Registration date">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!--End of Pharmacy Details-->
+                            <!--Start of Submit-->
+
+
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <button type="button" id="prevBtn" onclick="nextPrev(-1)" class="form-control">Previous</button>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <button type="button" id="nextBtn" onclick="nextPrev(1)" class="form-control">Next</button>
+                                </div>
+                            </div>
+
+
+                            <div style="text-align:center;margin-top:40px;">
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
 
     <script src="./JAVASCRIPT/jquery-3.3.1.min.js"></script>
     <script src="./JAVASCRIPT/popper.min.js"></script>
     <script src="./customJs/pagedRegistration.js"></script>
-   <!--<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>-->
+    <!--<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>-->
     <!--<script src="./JAVASCRIPT/register.js"></script>-->
 </body>
 
