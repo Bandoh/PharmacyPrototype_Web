@@ -1,0 +1,43 @@
+#sidebarContainer{
+    z-index: 1;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    overflow-y: hidden;
+    background: #2c3e50;
+    border: 2px solid red;
+    opacity: 0.9;
+}
+
+#pageContainer{
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+/*Side bar to be displayed*/
+#container.menuDisplayed #sidebarContainer{
+    width: 250px;
+}
+
+#container.menuDisplayed #pageContainer{
+    padding-left: 250px;
+}
+
+/*sidebar styling*/
+.sidebar-nav{
+    padding: 0;
+    list-style: none;
+}
+.sidebar-nav li{
+    text-indent: 20px;
+    line-height: 40px;
+}
+.sidebar-nav li a{
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+.sidebar-nav li a:hover{
+    background: #16A085
+}

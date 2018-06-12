@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="CSS/Styles/sidebar.css">
+    <link href="./CSS/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+
+        <!--Siderbar-->
+        <div id="sidebarContainer">
+            <ul class="sidebar-nav">
+                <li><a href="#">Check stock</a></li>
+                <li><a href="#">Update Stock</a></li>
+                <li><a href="#">Something here</a></li>
+                <li><a href="#">Something here</a></li>
+                <li><a href="#">Something here</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+
+        <!--Page Content will go under here-->
+        <div id="pageContainer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#" class="btn btn-success" id="toggleMenu">Menu</a>
+                        <h2>My sidebar layout</h2>
+                        <p>My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Toggling the side bar...-->
+    <script>
+        console.log('start');
+        var sidebar = document.getElementById('toggleMenu');
+       // console.log(sidebar);
+        sidebar.addEventListener('click', function(e){
+            e.preventDefault();
+           
+           var myToggle = document.getElementById('container');
+           myToggle.classList.toggle('menuDisplayed');
+        });
+    </script>
+
+</body>
+</html>
