@@ -5,6 +5,7 @@ function showTab(n){
     // Grab and display each tab by index
     let myTab = document.getElementsByClassName('tab');
     myTab[n].style.display = 'block';
+    console.log(myTab[n].length);
 
     if(n == 0){
         document.getElementById('prevBtn').style.display = 'none';
@@ -18,7 +19,7 @@ function showTab(n){
         document.getElementById('nextBtn').innerHTML = 'Next'
     }
 
-    stepIndicator();
+    //stepIndicator();
 }
 
 function nextPrev(n){
@@ -51,10 +52,9 @@ function validateForm(){
 
 function stepIndicator(n){
 
-    let i,x = document.getElementsByClassName('steps');
-
+    let i,x = document.getElementsByClassName('step');
     for(i = 0; i < x.length; i++){
-        x[i].className = x[i].className.replace(' active','')
+        x[i].className = x[i].className.replace(' active','');
     }
 
     x[n].className += ' active';

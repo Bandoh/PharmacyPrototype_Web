@@ -6,8 +6,15 @@ var config = {
     storageBucket: "virtualpharm-73624.appspot.com",
     messagingSenderId: "356469878815"
 };
-  firebase.initializeApp(config);
 
+
+  var done =firebase.initializeApp(config);
+  var storage = firebase.storage();
+  var storageref = storage.ref();
+  var imaageref = storageref.child('image');
+
+  
+  console.log(done);
 
 // submiting the form Incomplete
 function submitForm(e){
