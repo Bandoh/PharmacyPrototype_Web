@@ -5,24 +5,31 @@
     height: 100%;
     overflow-y: hidden;
     background: #2c3e50;
-    border: 2px solid red;
     opacity: 0.9;
+}
+
+#pageText{
+    border: 2px  #000;
+    padding: 5px;
 }
 
 #pageContainer{
     width: 100%;
     position: absolute;
-    padding: 15px;
+    padding-left: 150px;
+    padding-top: 0;
 }
 
 /*Side bar to be displayed*/
 #container.menuDisplayed #sidebarContainer{
-    width: 250px;
+    width: 180px;
 }
 
 #container.menuDisplayed #pageContainer{
-    padding-left: 250px;
+    padding-left: 270px;
 }
+
+
 
 /*sidebar styling*/
 .sidebar-nav{
@@ -30,14 +37,92 @@
     list-style: none;
 }
 .sidebar-nav li{
-    text-indent: 20px;
-    line-height: 40px;
+    text-indent: 30px;
+    line-height: 72px;
+    font-size: 1rem;
 }
 .sidebar-nav li a{
     display: block;
     text-decoration: none;
-    color: #ddd;
+    color: #fff;
 }
 .sidebar-nav li a:hover{
-    background: #16A085
+    background-color: #000;
+}
+
+/*IconBar */
+.iconBar {
+    z-index: 1;
+    position: absolute;
+    width: 70px;
+    background-color: #555; 
+    background: #2c3e50;
+    opacity: 0.9;
+    height: 100%;
+}
+
+.iconBar a {
+    display: block;
+    text-align: center; 
+    padding: 10;
+    line-height: 2;
+    transition: all 0.3s ease; 
+    color: #fff;
+    font-size: 36px; 
+}
+
+.iconBar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+.active {
+    background-color: #000; /* Add an active/current color */
+}
+#container.menuDisplayed #iconsContainer {
+    padding-left: 180px;
+}
+
+/*Affecting the wholse side container*/
+
+
+/*For toggling the sidebar menu*/
+#sidebarMenuBtn {
+    height: 50px;
+    position: relative;
+}
+#container.menuDisplayed #sidebarMenuBtn button{
+    margin-left: 180px;
+}
+#container.menuDisplayed #sidebarMenuBtn #topBranding{
+    width: 180px;
+    color: #000;
+    background: #c2c3c4;
+}
+#sidebarMenuBtn button{
+    height: 50px;
+    padding: 20px;
+    border-radius: 0;
+    width: 70px;
+    float: left;
+}
+#sidebarMenuBtn button:hover{
+    background-color: #000;
+}
+#topBranding{
+    z-index: 1;
+    position: absolute;
+    overflow-y: hidden;
+    width: 0px;
+    height: 50px;
+    text-align: center;
+}
+
+#topBranding label{
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 19px;
+    font-family: "Times New Roman", Times, serif;
+}
+#space{
+    height: 100px;
 }
