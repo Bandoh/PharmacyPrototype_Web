@@ -1,0 +1,22 @@
+{
+  "name": "pharmacyprototype_web",
+  "version": "1.0.0",
+  "description": "This website will allow pharmacies to register and provide details about their pharmacies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bandoh/PharmacyPrototype_Web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bandoh/PharmacyPrototype_Web/issues"
+  },
+  "homepage": "https://github.com/Bandoh/PharmacyPrototype_Web#readme",
+  "dependencies": {
+    "firebase": "^5.0.4"
+  }
+}

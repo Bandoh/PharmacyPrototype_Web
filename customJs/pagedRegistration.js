@@ -14,7 +14,9 @@ function showTab(n){
     }
 
     if(n == (myTab.length -1)){
-        document.getElementById('nextBtn').innerHTML = 'Register';
+        var nextbtn= document.getElementById('nextBtn');
+        nextbtn.innerHTML = 'Register';
+        //nextbtn.addEventListener("click",submitForm());
     }else{
         document.getElementById('nextBtn').innerHTML = 'Next'
     }
