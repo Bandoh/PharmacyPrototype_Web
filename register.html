@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="card-body">
-                        <form id="registerForm" role="form">
+                        <form id="registerForm" role="form" method="POST">
 
 
                             <!--Start of owner Details-->
@@ -128,6 +128,7 @@
                                     <button type="button" id="prevBtn" onclick="nextPrev(-1)" class="form-control">Previous</button>
                                 </div>
                                 <div class="col-xs-6 col-sm-6 col-md-6">
+                                    <input type="submit" id="submitBtn" name="submit" style="visibility: hidden;" class="form-control" >
                                     <button type="button" id="nextBtn" onclick="nextPrev(1)" class="form-control">Next</button>
                                 </div>
                             </div>

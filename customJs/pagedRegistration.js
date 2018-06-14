@@ -5,7 +5,6 @@ function showTab(n){
     // Grab and display each tab by index
     let myTab = document.getElementsByClassName('tab');
     myTab[n].style.display = 'block';
-    console.log(myTab[n].length);
 
     if(n == 0){
         document.getElementById('prevBtn').style.display = 'none';
@@ -13,12 +12,23 @@ function showTab(n){
         document.getElementById('prevBtn').style.display = 'inline';
     }
 
+    //DOWN HERE I HAVE CHANGED THE BUTTON TYPE TO SUBMIT SO WE CAN TRY CATCHING IT
     if(n == (myTab.length -1)){
         var nextbtn= document.getElementById('nextBtn');
-        nextbtn.innerHTML = 'Register';
+        var register = document.getElementById('submitBtn');
+        
+        nextbtn.style.visibility = 'hidden';
+        register.style.visibility = 'visible';
+        
+       
         //nextbtn.addEventListener("click",submitForm());
     }else{
+        var nextbtn= document.getElementById('nextBtn');
+        var register = document.getElementById('submitBtn');
+
         document.getElementById('nextBtn').innerHTML = 'Next'
+        nextbtn.style.visibility = 'visible';
+        register.style.visibility = 'hidden';
     }
 
     //stepIndicator();
