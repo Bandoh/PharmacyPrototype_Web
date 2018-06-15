@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="./CSS/animate.css">
     <link href="./CSS/bootstrap.css" rel="stylesheet">
     <link href="./CSS/Styles/main.css" rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/Styles/main.css" />
+  
+    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/Styles/main.css" /> 
+	<script src="./JAVASCRIPT/login.js"></script>
 </head>
 
 <body id="body">
@@ -26,14 +27,16 @@
                         </div>
                     </div>
                     <div class="card-body container">
-                        <form id="loginForm" action="" method="POST">
+                        <form id="loginForm" action="" method="POST" onsubmit="return validate();">
                             <div class="form-group">
                                 <input name="E-mail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                             </div>
                             <div class="form-group">
                                 <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                <div class="">
-                                    <button type="submit" id="loginbtn" class="btn btn-outline-dark container">
+                                <div class=""> 
+                                    
+                                    <button type="submit" id="loginbtn" class="btn btn-outline-dark container"  
+                                    >
                                         <a href="">Sign in</a>
                                     </button>
                                 </div>
@@ -55,9 +58,57 @@
                 </div>
             </div>
         </div>
-        </d iv>
+        </div>
         <script src="./JAVASCRIPT/jquery-3.3.1.min.js"></script>
-        <script src="./JAVASCRIPT/popper.min.js"></script>
+        <script src="./JAVASCRIPT/popper.min.js"></script> 
+         
+        
+        <script type="text/JAVASCRIPT"> 
+         
+ 
+         var attempts=3;
+       
+        function validate(){ 
+            
+            
+var username= document.getElementById("exampleInputEmail1").value; 
+var password= document.getElementById("exampleInputPassword1").value; 
+
+if((username=="admin@admin")&&(password=="root")){ 
+    alert("login successful");
+window.location="home.html"
+ return false;
+ 
+} 
+else{  
+     if (attempts==0){ 
+         alert("No login attempts available");
+     } 
+     else{ 
+         attempts=attempts-1; 
+         alert("Login failed now only "+attempts+" login attempts available"); 
+                if(attempts==0){  
+            alert("you've used all chances");
+            document.getElementById("exampleInputEmail1").disabled=true; 
+            document.getElementById("exampleInputPassword1").disabled=true; 
+            document.getElementById("loginbtn").disabled=true;  
+
+return false;
+} 
+     }
+        
+     
+   
+     
+   
+    //disablig fields after 3 attempts 
+    
+    
+}  
+
+}
+
+        </script>
 </body>
 
 </html>
