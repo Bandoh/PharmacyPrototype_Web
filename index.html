@@ -6,14 +6,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>Login</title>
+
+    <!--Style sheets-->
     <link rel="stylesheet" href="./CSS/animate.css">
     <link href="./CSS/bootstrap.css" rel="stylesheet">
-    <link href="./CSS/Styles/main.css" rel="stylesheet">
-  
-    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/Styles/main.css" /> 
-	<script src="./JAVASCRIPT/login.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/Styles/main.css" />
+    <link rel="shortcut icon" href="">
+    
+    <title>Login</title>
+
 </head>
 
 <body id="body">
@@ -27,19 +28,18 @@
                         </div>
                     </div>
                     <div class="card-body container">
-                        <form id="loginForm" action="" method="POST" onsubmit="return validate();">
+                        <form id="loginForm" role="form" method="POST">
                             <div class="form-group">
-                                <input name="E-mail" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                             </div>
                             <div class="form-group">
-                                <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                <div class=""> 
-                                    
-                                    <button type="submit" id="loginbtn" class="btn btn-outline-dark container"  
-                                    >
-                                        <a href="">Sign in</a>
-                                    </button>
-                                </div>
+                                <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+                            
+                            <div class="form-group">
+                                <button type="submit" id="loginBtn" name="login" class="form-control" style="margin-top: 10px;" value="Login">Login</button>
+                                <!--<input type="submit" id="loginBtn" name="login" class="form-control" style="margin-top: 10px;" value="Login">-->
+                            </div>
+                            <div>
                                 <small id="passwordHelp" class="form-text text-muted">Never share your password with anyone</small>
                             </div>
                             <div class="text-center">
@@ -58,57 +58,11 @@
                 </div>
             </div>
         </div>
-        </div>
-        <script src="./JAVASCRIPT/jquery-3.3.1.min.js"></script>
-        <script src="./JAVASCRIPT/popper.min.js"></script> 
-         
-        
-        <script type="text/JAVASCRIPT"> 
-         
- 
-         var attempts=3;
-       
-        function validate(){ 
-            
-            
-var username= document.getElementById("exampleInputEmail1").value; 
-var password= document.getElementById("exampleInputPassword1").value; 
-
-if((username=="admin@admin")&&(password=="root")){ 
-    alert("login successful");
-window.location="home.html"
- return false;
- 
-} 
-else{  
-     if (attempts==0){ 
-         alert("No login attempts available");
-     } 
-     else{ 
-         attempts=attempts-1; 
-         alert("Login failed now only "+attempts+" login attempts available"); 
-                if(attempts==0){  
-            alert("you've used all chances");
-            document.getElementById("exampleInputEmail1").disabled=true; 
-            document.getElementById("exampleInputPassword1").disabled=true; 
-            document.getElementById("loginbtn").disabled=true;  
-
-return false;
-} 
-     }
-        
-     
-   
-     
-   
-    //disablig fields after 3 attempts 
-    
-    
-}  
-
-}
-
-        </script>
+    </div>
+    <script src="./JAVASCRIPT/jquery-3.3.1.min.js"></script>
+    <script src="./JAVASCRIPT/popper.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="customJs/app.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="CSS/Styles/sidebar.css">  
     <link rel="stylesheet" type="text/css" href="footerstyle.css">
     <link href="./CSS/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/fontawesome-all.css">
+    <link rel="shortcut icon" href="">
 </head>
 <body>
     <div id="container">
@@ -33,20 +34,20 @@
                         <li><a href="#">Update Stock</a></li>
                         <li><a href="#">Settings </a></li>
                         <li><a href="#">Feedback</a></li>
-                        <li><a href="#">Logout</a></li>
+                        <li><a href="#" onclick="logout();">Logout</a></li>
                     </ul>
                 </div>
 
-                <div id="iconsContainer">
-                    <div class="iconBar">
+           <!-- <div id="iconsContainer">
+                    <div class="fa-ul">
                         <div id="space"></div>
-                        <a class="active" href="#"><i class="fa fa-home"></i></a> 
-                        <a href="#"><i class="fa fa-pencil-square-o"></i></a> 
-                        <a href="#"><i class="fa fa-cogs"></i></a> 
-                        <a href="#"><i class="fa fa-commenting"></i></a>
-                        <a href="#"><i class="fa fa-sign-out"></i></a> 
+                        <div><i class="fas fa-home fa-fw" style="background:MistyRose"></i></div>
+                        <div><i class="fas fa-info fa-fw" style="background:MistyRose"></i></div>
+                        <div><i class="fas fa-book fa-fw" style="background:MistyRose"></i></div>
+                        <div><i class="fas fa-pencil-alt fa-fw" style="background:MistyRose"></i></div>
+                        <div><i class="fas fa-cog fa-fw" style="background:MistyRose"></i></div>
                     </div>
-                </div>
+                </div> -->
         </div>
 
         <!--Page Content will go under here-->
@@ -57,6 +58,9 @@
                         <div id="pageText">
                             <h2>My sidebar layout</h2>
                             <p>My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.My Main information comes in here.</p>
+                        </div>
+                        <div id="myLogout">
+                            <button id="logoutBTN">Logout</button>
                         </div>
                     </div>
                 </div> 
@@ -101,9 +105,9 @@
     </div> 
 
 
+    <script src="customJs/firebase.js"></script>
     <!--Toggling the side bar...-->
     <script>
-        console.log('start');
         var sidebar = document.getElementById('toggleMenu');
        // console.log(sidebar);
         sidebar.addEventListener('click', function(e){
@@ -112,7 +116,10 @@
            var myToggle = document.getElementById('container');
            myToggle.classList.toggle('menuDisplayed');
         });
+
     </script>
+
+    <script src="customJs/app.js"></script>  
 
 </body>
 </html>
