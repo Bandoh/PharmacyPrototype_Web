@@ -9,3 +9,12 @@
         };
     firebase.initializeApp(config);
 })();
+
+
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      console.log('User Present');
+    } else {
+        console.log('User Absent');
+    }
+  });

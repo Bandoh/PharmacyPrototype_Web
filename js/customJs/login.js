@@ -26,3 +26,14 @@ function login(e){
     });
 
 }
+
+// State of user at login screen
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      
+        window.location.href = 'home.html';
+
+    } else {
+        
+    }
+});
