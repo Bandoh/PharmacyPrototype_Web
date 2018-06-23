@@ -9,14 +9,3 @@
         };
     firebase.initializeApp(config);
 })();
-
-firebase.auth().onAuthStateChanged(function(user) {
-  
-  if(user){
-    
-  }
-  else{
-    
-  }
-  
-});
