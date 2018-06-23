@@ -6,10 +6,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-   
+
+
     <!--Style Sheet-->
-    <link rel="stylesheet" type="text/css" href="../css/customCss/sidebar.css">  
+    <link rel="stylesheet" type="text/css" href="../css/customCss/sidebar.css">
     <link rel="stylesheet" type="text/css" href="../css/customCss/footerstyle.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.css">
     <!--TODO: add fontawesome-->
@@ -18,60 +18,38 @@
     <!--Firebase SDK and Config-->
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
     <script src="../js/firebaseJs/config.js"> </script>
-    
+    <script src="../js/customJs/home.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/customCss/main.css">
+
 
     <title>Home</title>
 
 </head>
 
 <body>
-    <div id="container">
-
-        <div id="completeSideContainer">
-            <!--Menu toggling-->
-            <div id="sidebarMenuBtn">
-                <div id="topBranding">
-                    <label>Virtual Pharmacy</label>
-                </div>
-                <button class="fa fa-bars btn btn-outline-dark" id="toggleMenu"></button>
-            </div>
-
-            <!--Siderbar-->
-
-            <div id="sidebarContainer">
-                <div id="space"></div>
-                <ul class="sidebar-nav">
-                    <li>
-                        <a class="active" href="#">Check Stock</a>
-                    </li>
-                    <li>
-                        <a href="#">Update Stock</a>
-                    </li>
-                    <li>
-                        <a href="#">Settings </a>
-                    </li>
-                    <li>
-                        <a href="#">Feedback</a>
-                    </li>
-                    <li>
-                        <a href="#" onclick="logout();">Logout</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- <div id="iconsContainer">
-                    <div class="fa-ul">
-                        <div id="space"></div>
-                        <div><i class="fas fa-home fa-fw" style="background:MistyRose"></i></div>
-                        <div><i class="fas fa-info fa-fw" style="background:MistyRose"></i></div>
-                        <div><i class="fas fa-book fa-fw" style="background:MistyRose"></i></div>
-                        <div><i class="fas fa-pencil-alt fa-fw" style="background:MistyRose"></i></div>
-                        <div><i class="fas fa-cog fa-fw" style="background:MistyRose"></i></div>
-                    </div>
-                </div> -->
+    <div id="container" class="holder">
+        <div id="mySidenav" class="sidenav">
+            <a href="#" onclick="pageContainerPage()">
+                <i class="fa fa-user-circle"></i> Profile</a>
+            <a href="#" onclick="stockPage()">
+                <i class="fa fa-upload"></i> Stock</a>
+            <a href="#" onclick="settingsPage()">
+                <i class="fa fa-sliders-h"></i>Settings</a>
+            <a href="#" onclick="contactPage()">
+                <i class="fa fa-comment-dots"></i>Contact</a>
         </div>
-
         <!--Page Content will go under here-->
+        <div id="contact">
+            this is Contact
+        </div>
+        <div id="settings">
+            this is Settings
+        </div>
+        <div id="stock">
+            this is Contact
+        </div>
         <div id="pageContainer">
             <div class="container-fluid">
                 <div class="row">
@@ -94,10 +72,20 @@
                                 here.My Main information comes in here.My Main information comes in here.My Main information
                                 comes in here.My Main information comes in here.My Main information comes in here.My Main
                                 information comes in here.My Main information comes in here.My Main information comes in
-                                here.My Main information comes in here.My Main information comes in here.</p>
-                        </div>
-                        <div id="myLogout">
-                            <button id="logoutBTN">Logout</button>
+                                here.My Main information comes in here.My Main information comes in here.My Main information
+                                comes in here.My Main information comes in here.My Main information comes in here.My Main
+                                information comes in here.My Main information comes in here.My Main information comes in
+                                here.My Main information comes in here.My Main information comes in here.My Main information
+                                comes in here.My Main information comes in here.My Main information comes in here.My Main
+                                information comes in here.My Main information comes in here.My Main information comes in
+                                here.My Main information comes in here.My Main information comes in here.My Main information
+                                comes in here.My Main information comes in here.My Main information comes in here.My Main
+                                information comes in here.My Main information comes in here.My Main information comes in
+                                here.My Main information comes in here.My Main information comes in here.My Main information
+                                comes in here.My Main information comes in here.My Main information comes in here.My Main
+                                information comes in here.My Main information comes in here.My Main information comes in
+                                here.My Main information comes in here.My Main information comes in here.My Main information
+                                comes in here.My Main information comes in here</p>
                         </div>
                     </div>
                 </div>
@@ -168,25 +156,11 @@
             </div>
         </div>
 
-    
 
-    <script src="../js/bootstrap/jquery-3.3.1.min.js"></script>
-    <script src="../js/bootstrap/popper.min.js"></script>
-    <script src="../js/customJs/logout.js"></script>
-    
 
-    <!--Toggling the side bar...-->  
-    <script>
-        var sidebar = document.getElementById('toggleMenu');
-       // console.log(sidebar);
-        sidebar.addEventListener('click', function(e){
-            e.preventDefault();
-           
-           var myToggle = document.getElementById('container');
-           myToggle.classList.toggle('menuDisplayed');
-        });
-    </script>
-
+        <script src="../js/bootstrap/jquery-3.3.1.min.js"></script>
+        <script src="../js/bootstrap/popper.min.js"></script>
+        <script src="../js/customJs/logout.js"></script>
 </body>
 
 </html>

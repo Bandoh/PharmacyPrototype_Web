@@ -1,127 +1,29 @@
-#sidebarContainer{
-    z-index: 1;
-    position: absolute;
-    width: 0px;
+.sidenav {
     height: 100%;
-    overflow-y: hidden;
-    background: #2c3e50;
-    opacity: 0.9;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:rgb(48, 46, 46);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-#pageText{
-    border: 2px  #000;
-}
-
-#pageContainer{
-    width: 100%;
-    position: absolute;
-    padding-left: 150px;
-    padding-top: 0;
-}
-
-/*Side bar to be displayed*/
-#container.menuDisplayed #sidebarContainer{
-    width: 180px;
-}
-
-#container.menuDisplayed #pageContainer{
-    padding-left: 270px;
-}
-
-
-
-/*sidebar styling*/
-.sidebar-nav{
-    padding: 0;
-    list-style: none;
-}
-.sidebar-nav li{
-    text-indent: 30px;
-    line-height: 72px;
-    font-size: 1rem;
-}
-.sidebar-nav li a{
-    display: block;
+.sidenav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    color: #fff;
-}
-.sidebar-nav li a:hover{
-    background-color: #000;
-}
-
-/*IconBar */
-.iconBar {
-    z-index: 1;
-    position: absolute;
-    width: 70px;
-    background-color: #555; 
-    background: #2c3e50;
-    opacity: 0.9;
-    height: 100%;
-}
-
-.iconBar a {
+    font-size: 18px;
+    color: rgb(185, 240, 237);
     display: block;
-    text-align: center; 
-    padding: 10;
-    line-height: 2;
-    transition: all 0.3s ease; 
-    color: #fff;
-    font-size: 36px; 
+    transition: 0.3s;
 }
 
-.iconBar a:hover {
-    background-color: #000; /* Add a hover color */
-}
-.active {
-    background-color: #000; /* Add an active/current color */
-}
-#container.menuDisplayed #iconsContainer {
-    padding-left: 180px;
+.sidenav a:hover {
+    color: #f1f1f1;
 }
 
-/*Affecting the wholse side container*/
-
-
-/*For toggling the sidebar menu*/
-#sidebarMenuBtn {
-    height: 50px;
-    position: relative;
-}
-#container.menuDisplayed #sidebarMenuBtn button{
-    margin-left: 180px;
-}
-#container.menuDisplayed #sidebarMenuBtn #topBranding{
-    width: 180px;
-    color: #000;
-    background: #c2c3c4;
-}
-#sidebarMenuBtn button{
-    height: 50px;
-    padding: 20px;
-    border-radius: 0;
-    width: 70px;
-    float: left;
-}
-#sidebarMenuBtn button:hover{
-    background-color: #000;
-}
-#topBranding{
-    z-index: 1;
-    position: absolute;
-    overflow-y: hidden;
-    width: 0px;
-    height: 50px;
-    text-align: center;
-}
-
-#topBranding label{
-    margin: auto;
-    padding: 15px;
-    text-align: center;
-    font-size: 19px;
-    font-family: "Times New Roman", Times, serif;
-}
-#space{
-    height: 100px;
+.holder{
+    margin-left: 200px;
 }

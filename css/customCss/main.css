@@ -1,6 +1,7 @@
 #body {
     opacity: 0.92;
 }
+
 #bodyRegister {
     background-color: white;
     background-attachment: fixed;
@@ -33,11 +34,13 @@
     margin-top: 5%;
     margin-bottom: 1%;
 }
+
 #loginBtn:hover {
     background-color: green;
     color: #fff;
 }
-#submitBtn:hover{
+
+#submitBtn:hover {
     background-color: green;
     color: #fff;
 }
@@ -65,7 +68,6 @@
     color: #fff;
 }
 
-
 .centered-form {
     margin-top: 5%;
 }
@@ -81,4 +83,23 @@
 
 .step.finish {
     background-color: #4CAF50;
+}
+
+#pageText {
+    background-color: red;
+}
+
+#contact {
+    background-color: black;
+    display: none;
+}
+
+#settings {
+    background-color: green;
+    display: none;
+}
+
+#stock {
+    background-color: fuchsia;
+    display: none;
 }
