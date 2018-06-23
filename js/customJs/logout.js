@@ -5,16 +5,6 @@ firebase.auth().onAuthStateChanged(function(user) {
       // No user is signed in.
     }
   });
-/*(function(){
-    var user = firebase.auth().currentUser;
-
-    if (user) {
-    
-    } else {
-    window.location.href = 'index.html';
-    }
-})();*/
-
 eventListener();
 //Listener
 function eventListener(){
