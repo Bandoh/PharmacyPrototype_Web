@@ -1,6 +1,6 @@
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 220px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -15,15 +15,21 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 18px;
-    color: rgb(185, 240, 237);
+    color: blueviolet;
     display: block;
     transition: 0.3s;
 }
 
+.sidenav a i{
+    padding-right: 15px;
+}
+
 .sidenav a:hover {
     color: #f1f1f1;
+    border-left: 10px solid blueviolet;
+    font-size: 20px;
 }
 
 .holder{
-    margin-left: 200px;
+    margin-left: 220px;
 }

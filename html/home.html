@@ -12,19 +12,16 @@
     <link rel="stylesheet" type="text/css" href="../css/customCss/sidebar.css">
     <link rel="stylesheet" type="text/css" href="../css/customCss/footerstyle.css">
     <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.css">
-    <!--TODO: add fontawesome-->
     <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/customCss/main.css">
 
     <!--Firebase SDK and Config-->
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
     <script src="../js/firebaseJs/config.js"> </script>
     <script src="../js/customJs/home.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/customCss/main.css">
 
-    <script src="../js/customJs/userCheck.js"></script>
-    
 
     <title>Home</title>
 
@@ -33,133 +30,110 @@
 <body>
     <div id="container" class="holder">
         <div id="mySidenav" class="sidenav">
-            <a href="#" onclick="pageContainerPage()">
-                <i class="fa fa-user-circle"></i> Profile</a>
+            <a href="#" onclick="myPharmacyPage()"><i class="fa fa-user"></i>My Pharmacy</a>
             <a href="#" onclick="stockPage()">
-                <i class="fa fa-upload"></i> Stock</a>
+                <i class="fa fa-upload"></i>Update Stock</a>
             <a href="#" onclick="settingsPage()">
                 <i class="fa fa-sliders-h"></i>Settings</a>
+            <a href="#" onclick="profilePage()">
+                <i class="fa fa-user-circle"></i> Profile</a>
             <a href="#" onclick="contactPage()">
                 <i class="fa fa-comment-dots"></i>Contact</a>
         </div>
         <!--Page Content will go under here-->
-        <div id="contact">
-            this is Contact
-        </div>
-        <div id="settings">
-            this is Settings
-        </div>
-        <div id="stock">
-            this is Contact
-        </div>
         <div id="pageContainer">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <div id="pageText">
-                            <h2>My sidebar layout</h2>
-                            <p>My Main information comes in here.My Main information comes in here.My Main information comes
-                                in here.My Main information comes in here.My Main information comes in here.My Main information
-                                comes in here.My Main information comes in here.My Main information comes in here.My Main
-                                information comes in here.My Main information comes in here.My Main information comes in
-                                here.My Main information comes in here.My Main information comes in here.My Main information
-                                comes in here.My Main information comes in here.My Main information comes in here.My Main
-                                information comes in here.My Main information comes in here.My Main information comes in
-                                here.My Main information comes in here.My Main information comes in here.My Main information
-                                comes in here.My Main information comes in here.My Main information comes in here.My Main
-                                information comes in here.My Main information comes in here.My Main information comes in
-                                here.My Main information comes in here.My Main information comes in here.My Main information
-                                comes in here.My Main information comes in here.My Main information comes in here.My Main
-                                information comes in here.My Main information comes in here.My Main information comes in
-                                here.My Main information comes in here.My Main information comes in here.My Main information
-                                comes in here.My Main information comes in here.My Main information comes in here.My Main
-                                information comes in here.My Main information comes in here.My Main information comes in
-                                here.My Main information comes in here.My Main information comes in here.My Main information
-                                comes in here.My Main information comes in here.My Main information comes in here.My Main
-                                information comes in here.My Main information comes in here.My Main information comes in
-                                here.My Main information comes in here.My Main information comes in here.My Main information
-                                comes in here.My Main information comes in here.My Main information comes in here.My Main
-                                information comes in here.My Main information comes in here.My Main information comes in
-                                here.My Main information comes in here.My Main information comes in here.My Main information
-                                comes in here.My Main information comes in here.My Main information comes in here.My Main
-                                information comes in here.My Main information comes in here.My Main information comes in
-                                here.My Main information comes in here.My Main information comes in here.My Main information
-                                comes in here.My Main information comes in here.My Main information comes in here.My Main
-                                information comes in here.My Main information comes in here.My Main information comes in
-                                here.My Main information comes in here.My Main information comes in here.My Main information
-                                comes in here.My Main information comes in here</p>
+                            <div id="contact">
+                                this is Contact
+                            </div>
+                            <div id="settings">
+                                this is Settings
+                            </div>
+                            <div id="stock">
+                                this is Stock
+                            </div>
+                            <div id="mypharmacy">
+                                this is my Pharmacy page
+                            </div>
+                            <div id="profile">
+                                this is Profile
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="footer">
-                    <div class="footer-social-icons">
-                        <ul>
-                            <li>
-                                <a href="#" target="blank">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="blank">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="blank">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="blank">
-                                    <i class="fa fa-youtube"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-menu-one">
-                        <ul>
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
-                                <a href="#">About us </a>
-                            </li>
-                            <li>
-                                <a href="#">contact us</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                    <div class="footer-menu-two">
-                        <ul>
-                            <li>
-                                <a href="#">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">News </a>
-                            </li>
-                            <li>
-                                <a href="#">Advertisment</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; Copyright By:
-                    <a href="#">Platinum Team </a>
-                </p>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer">
+                        <div class="footer-social-icons">
+                            <ul>
+                                <li>
+                                    <a href="#" target="blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="blank">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="blank">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="blank">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
+                        <div class="footer-menu-one">
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About us </a>
+                                </li>
+                                <li>
+                                    <a href="#">contact us</a>
+                                </li>
 
+                            </ul>
+                        </div>
 
+                        <div class="footer-menu-two">
+                            <ul>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">News </a>
+                                </li>
+                                <li>
+                                    <a href="#">Advertisment</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; Copyright By:
+                            <a href="#">Platinum Team </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="../js/bootstrap/jquery-3.3.1.min.js"></script>
         <script src="../js/bootstrap/popper.min.js"></script>
         <script src="../js/customJs/logout.js"></script>
