@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <!--Meta tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Style sheets-->
-    <link rel="stylesheet" href="./CSS/animate.css">
-    <link href="./CSS/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/Styles/main.css" />
+    <link rel="stylesheet" href="../css/xtra/animate.css">
+    <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/customCss/main.css" />
     <link rel="shortcut icon" href="">
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+    <!--Firebase SDK and Config-->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="../js/firebaseJs/config.js"> </script>
+    
     
     <title>Login</title>
 
@@ -23,14 +25,14 @@
     <div class="container">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <div class="d-flex justify-content-center" id="cardview">
-                <div class="card animated fadeInDown" style="width: 450px;" id="cardd">
+                <div class="card" style="width: 450px;" id="cardd">
                     <div class="" id="cardhead">
                         <div class="text-center text-info" id="head">
                             <h5>Virtual Pharmacy Membership Login</h5>
                         </div>
                     </div>
                     <div class="card-body container">
-                        <form id="loginForm" role="form" method="POST">
+                        <form action="#" id="loginForm" role="form" method="POST">
                             <div class="form-group">
                                 <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                             </div>
@@ -60,11 +62,9 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script src="./JAVASCRIPT/jquery-3.3.1.min.js"></script>
-    <script src="./JAVASCRIPT/popper.min.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-    <script src="customJs/app.js"></script>
+    </div>  
+
+    <script src="../js/customJs/login.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-let app_fireBase = {};
 (function(){
     var config = {
         apiKey: "AIzaSyALIwec8h-ZbYJ2ZJoqlq8mgq3y0ho0M9o",
@@ -7,8 +6,17 @@ let app_fireBase = {};
         projectId: "virtualpharm-73624",
         storageBucket: "virtualpharm-73624.appspot.com",
         messagingSenderId: "356469878815"
-    };
+        };
     firebase.initializeApp(config);
+})();
 
-    app_fireBase = firebase;
+firebase.auth().onAuthStateChanged(function(user) {
+  
+  if(user){
+    
+  }
+  else{
+    
+  }
+  
 });

@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
+   
+    <!--Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="../css/customCss/sidebar.css">  
+    <link rel="stylesheet" type="text/css" href="../css/customCss/footerstyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.css">
+    <!--TODO: add fontawesome-->
+    <link rel="shortcut icon" href="">
+
+    <!--Firebase SDK and Config-->
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="../js/firebaseJs/config.js"> </script>
+    
+
     <title>Home</title>
 
-    <link rel="stylesheet" href="CSS/Styles/sidebar.css">  
-    <link rel="stylesheet" type="text/css" href="footerstyle.css">
-    <link href="./CSS/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="/CSS/fontawesome-all.css">
-    <link rel="shortcut icon" href="">
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
 </head>
 <body>
     <div id="container">
@@ -105,8 +113,12 @@
 
     </div> 
 
+    <script src="../js/bootstrap/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrap/popper.min.js"></script>
+    <script src="../js/customJs/logout.js"></script>
+    
 
-    <!--Toggling the side bar...-->
+    <!--Toggling the side bar...-->  
     <script>
         var sidebar = document.getElementById('toggleMenu');
        // console.log(sidebar);
@@ -116,10 +128,7 @@
            var myToggle = document.getElementById('container');
            myToggle.classList.toggle('menuDisplayed');
         });
-
     </script>
-
-    <script src="customJs/app.js"></script>  
 
 </body>
 </html>
