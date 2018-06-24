@@ -79,14 +79,10 @@
 
 .tab {
     display: none;
-}
+} 
 
 .step.finish {
     background-color: #4CAF50;
-}
-
-#pageText {
-    background-color: red;
 }
 
 #contact {
@@ -107,4 +103,38 @@
 #profile{
     background-color: tomato;
     display: none;
+}
+
+
+#pageText{
+    margin: 100px 10px 100px 10px;
+    padding: 2px;
+}
+
+#mypharmacy #myPharmHeading h4{
+    float: left;
+    width: 50%;
+    outline: none;
+    margin: none;
+    padding: 1%;
+    background-color: #eee;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #eee;
+    cursor: pointer;
+    border-bottom: 3px solid #ff5656;
+}
+
+#mypharmacy #myPharmHeading h4:hover{
+    background-color: #d7d4d4;  
+    border-bottom: 3px solid #d7d4d4;
+}
+
+#mypharmacy #StockItems h4{
+    float: left;
+    width: 50%;
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid  #d7d4d4;
 }
