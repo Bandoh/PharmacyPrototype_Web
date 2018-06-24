@@ -1,11 +1,3 @@
-/*var db = firebase.firestore();
-const list_div = document.querySelector('#mypharmacy');
-db.collection("PharmacyDetails").get().then(function(querySnapshot) {
-    querySnapshot.forEach(function(doc) {
-       list_div.innerHTML += "<div>"+ doc.data().Stock.StockName +"</div>"
-    });
-});*/
-
 // Functions for tab Navigation
 function contactPage() {
     var contactpage = document.getElementById('contact');
