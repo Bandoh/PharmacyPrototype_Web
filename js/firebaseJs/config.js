@@ -10,11 +10,8 @@
     firebase.initializeApp(config);
 })();
 
+//User Profile
+var user = firebase.auth().currentUser;
 
-firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
-      console.log('User Present');
-    } else {
-        console.log('User Absent');
-    }
-  });
+
+
