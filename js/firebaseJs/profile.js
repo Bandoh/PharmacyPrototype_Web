@@ -6,6 +6,8 @@ firebase.auth().onAuthStateChanged(function(user) {
         var name, email, photoUrl, uid, emailVerified;
         
         if (user != null) {
+            //get profile values
+
             name = user.displayName;
             email = user.email;
             photoUrl = user.photoURL;
@@ -13,9 +15,7 @@ firebase.auth().onAuthStateChanged(function(user) {
             uid = user.uid;  
             console.log(email);
 
-
-
-            
+            // set profile fields
             profileEmail.innerHTML = "Email: " + email;
         }
         

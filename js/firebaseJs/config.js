@@ -10,8 +10,6 @@
     firebase.initializeApp(config);
 })();
 
-//User Profile
-var user = firebase.auth().currentUser;
 
 
 

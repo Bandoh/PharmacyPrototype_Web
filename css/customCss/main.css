@@ -129,20 +129,20 @@
     border-bottom: 3px solid #d7d4d4;
 }
 
-#mypharmacy #StockItems h4{
+#mypharmacy h4{
     float: left;
-    width: 33.33334%;
+    width: 33.34%;
     padding: 10px;
     font-family: sans-serif;
     font-size: 16px;
-    border-bottom: 1px solid  #d7d4d4;
+    margin-top: 10px;
 }
 
 .switch {
     position: relative;
     display: inline-block;
     width: 60px;
-    height: 34px;
+    height: 28px;
 }
 .switch input {
     display: none;
@@ -156,13 +156,13 @@
     bottom: 0;
     background-color: #ccc;
     -webkit-transition: .4s;
-    transition: .4s;
+    transition: 1.5s;
 }
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 20px;
     left: 4px;
     bottom: 4px;
     background-color: white;
@@ -181,7 +181,7 @@
     transform: translateX(26px);
   }
   .slider.round {
-    border-radius: 34px;
+    border-radius:30px;
   }
   .slider.round:before {
     border-radius: 50%;
@@ -222,4 +222,8 @@
   
 #profile  button:hover, a:hover {
     opacity: 0.7;
+}
+
+#StockItems .switch {
+    margin-top: 15px;
 }
