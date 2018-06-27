@@ -46,7 +46,56 @@
         <div id="pageContainer">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-lg-12">
+                    <div class="col-xs-12 col-lg-12" id="products">
+                        <!--The form for adding new products will go here-->
+                        <div id="addProducts" style="visibility: hidden;">
+                            <div>
+                                <select class="form-control" id="updateMode">
+                                    <option value="snglMd">Single Stock Update</option>
+                                    <option value="mulMd">Multiple Stock Update</option>
+                                </select>
+                            </div>
+                            <div id="singleInput">
+                                <small>Single Medication Input mode</small>
+                                <form action="#" id="newMedication" role="form" method="POST">
+                                    
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" placeholder="Medication">
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" type="text" id="Price"  placeholder="Ghs 5.50">
+                                        </div>
+                                    
+                                    <div class="form-group">
+                                            <input class="form-control" id="addToStockBtnSingle" type="submit" value="Add To Stock">
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="multipleInput" style="visibility: hidden;">
+                                <small>Multiple Medication Input mode</small>
+                                
+                                    <button class="btn" id="newRow" style="display: block">Add Row</button>
+                                    <form action="#" id="newMedication" role="form" method="POST">
+                                        <div class="row">
+                                            <div class="form-group" id="rowGroup">
+                                                <div class="col-xs-12 col-lg-8" id="products">
+                                                    <input id="medication" class="form-control" type="text" placeholder="Medication">
+                                                </div>
+                                                <div class="col-xs-12 col-lg-4" id="products">
+                                                        <input class="form-control" type="text" placeholder="Price">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+                                        <div class="form-group">
+                                            <input class="form-control" id="addToStockBtnMultiple" type="submit" value="Add To Stock">
+                                        </div>
+                                    </form>
+                                
+                            </div>
+                        </div>
+                        <!--Retrieved Products display here-->
                         <div id="pageText">
                             <div id="mypharmacy">
                                 <div id="myPharmHeading">
@@ -54,16 +103,16 @@
                                     <h4>Price</h4>
                                     <h4>Available</h4>
                                 </div>
-                                <!--
+                                
                                 <div id="StockItems">
-                                        <h4>Panadol</h4>
+                                      <!--  <h4>Panadol</h4>
                                         <h4>Ghs 24.0</h4>
                                         <lable class='switch'>
                                             <input checked id='availablity' type='checkbox'>
                                             <span class='slider round'></span>
-                                        </lable>
-                                </div>    -->
-                               
+                                        </lable>-->
+                                </div>   
+                             
                             </div>
                             <div id="contact">
                                 this is Contact
@@ -161,6 +210,7 @@
     <script src="../js/bootstrap/popper.min.js"></script>
     <script src="../js/firebaseJs/myPharmacy.js"></script>
     <script src="../js/firebaseJs/profile.js"></script>
+    <script src="../js/firebaseJs/addStock.js"></script>
 </body>
 
 </html>

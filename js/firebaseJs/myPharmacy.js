@@ -1,21 +1,6 @@
-
-/*var isAvailable = document.getElementById('availablity');
-
-isAvailable.addEventListener('change', function(){
-       
-    if(this.checked){
-        console.log('It is checked');
-    }else{
-        console.log('unchecked');
-    }
-
-})*/
-
-
 const firestore = firebase.firestore();
 const settings = {/* your settings... */ timestampsInSnapshots: true};
 firestore.settings(settings);
-
 
 var db = firebase.firestore();
 
@@ -88,17 +73,3 @@ db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
     .catch(function(error) {
         console.log("Error getting documents: ", error);
     });
-
-
-
-
-    /*document.querySelector("#availablity").addEventListener('click', function(){
-        var ava = true;
-        if(ava){
-            console.log(document.getElementById("availablity").checked);
-        }
-    });*/
-
-
-
-
