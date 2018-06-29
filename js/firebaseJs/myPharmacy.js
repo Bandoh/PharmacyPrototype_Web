@@ -38,10 +38,18 @@ db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
                 avalbl.setAttribute("class", "switch");
                 avainp.setAttribute("type", "checkbox");
                 avainp.setAttribute("id", "availablity");
-                avaspan.setAttribute("class", "slider round")
+                if(isAvailable){
+                    avainp.setAttribute("checked","checked");
+                }
+                else{
+                    avainp.setAttribute("unchecked","unchecked");
+                }
+                
+                avaspan.setAttribute("class", "slider round");
+
 
                 medh4.textContent = med;
-                priceh4.textContent = price;
+                priceh4.textContent = "Ghs " + price;
 
                 avalbl.appendChild(avainp);
                 avalbl.appendChild(avaspan);
@@ -51,10 +59,6 @@ db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
                 item.appendChild(priceh4);
                 item.appendChild(avalbl);
                 item.appendChild(line);
-                
-
-
-
 
                 i++;
             }
@@ -63,3 +67,4 @@ db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
     .catch(function (error) {
         console.log("Error getting documents: ", error);
     });
+
