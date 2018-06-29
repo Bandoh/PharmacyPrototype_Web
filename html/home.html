@@ -5,7 +5,7 @@
     <!--Meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http2-equiv="X-UA-Compatible" content="ie=edge">
 
 
     <!--Style Sheet-->
@@ -31,15 +31,26 @@
     <div id="container" class="holder">
         <div>
             <div id="mySidenav" class="sidenav">
-                <a href="#" onclick="myPharmacyPage()"><i class="fa fa-user"></i>My Pharmacy</a>
-                <a href="#" onclick="stockPage()">
-                    <i class="fa fa-upload"></i>Update Stock</a>
+                <button id="updateStockBtn" class="raised-btn" href="#" onclick="stockPage()">
+                    <i class="fa fa-upload"></i>
+                    Update Stock
+                </button>
+                <a href="#" onclick="myPharmacyPage()">
+                    <i class="fa fa-user"></i>
+                    My Pharmacy
+                </a>           
                 <a href="#" onclick="settingsPage()">
-                    <i class="fa fa-sliders-h"></i>Settings</a>
+                    <i class="fa fa-sliders-h"></i>
+                    Settings
+                </a>
                 <a href="#" onclick="profilePage()">
-                    <i class="fa fa-user-circle"></i> Profile</a>
+                    <i class="fa fa-user-circle"></i>
+                    Profile
+                </a>
                 <a href="#" onclick="contactPage()">
-                    <i class="fa fa-comment-dots"></i>Contact</a>
+                    <i class="fa fa-comment-dots"></i>
+                    Contact
+                </a>
             </div>
         </div>
         <!--Page Content will go under here-->
@@ -74,7 +85,7 @@
                             <div id="multipleInput" style="visibility: hidden;">
                                 <small>Multiple Medication Input mode</small>
                                 
-                                    <button class="btn" id="newRow" style="display: block">Add Row</button>
+                                    <button class="btn" id="newRow" style="display: block" onclick="newRow()">Add Row</button>
                                     <form action="#" id="newMedication" role="form" method="POST">
                                         <div class="row">
                                             <div class="form-group" id="rowGroup">

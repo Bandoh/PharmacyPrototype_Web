@@ -1,27 +1,29 @@
 const firestore = firebase.firestore();
-const settings = {/* your settings... */ timestampsInSnapshots: true};
+const settings = { /* your settings... */
+    timestampsInSnapshots: true
+};
 firestore.settings(settings);
 
 var db = firebase.firestore();
 
 db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
     .get()
-    .then(function(querySnapshot) {
-        querySnapshot.forEach(function(doc) {
-            
+    .then(function (querySnapshot) {
+        querySnapshot.forEach(function (doc) {
+
             var i = 0;
-            while(i < doc.data().Stock.length){
-                
+            while (i < doc.data().Stock.length) {
+
                 var overViewList = document.getElementById("mypharmacy");
                 var item = document.createElement('div');
 
                 item.setAttribute("id", "StockItems");
                 overViewList.appendChild(item);
-                
+
 
                 var med = doc.data().Stock[i].Medication,
-                    price =  doc.data().Stock[i].Price,
-                    isAvailable =  doc.data().Stock[i].Available;
+                    price = doc.data().Stock[i].Price,
+                    isAvailable = doc.data().Stock[i].Available;
 
                 var medh4 = document.createElement('h4');
                 var priceh4 = document.createElement('h4');
@@ -33,31 +35,17 @@ db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
 
                 console.log(med);
 
-               /* if(isAvailable){
-                    console.log('should be checked')
-                    console.log(avainp.checked = true); 
-
-
-                }{
-                    avainp.checked = false;
-                }*/
-                
-
-                
-
-                
                 avalbl.setAttribute("class", "switch");
                 avainp.setAttribute("type", "checkbox");
-                avainp.setAttribute("id","availablity");
+                avainp.setAttribute("id", "availablity");
                 avaspan.setAttribute("class", "slider round")
-                
-                
-                
+
                 medh4.textContent = med;
                 priceh4.textContent = price;
-                
+
                 avalbl.appendChild(avainp);
                 avalbl.appendChild(avaspan);
+
 
                 item.appendChild(medh4);
                 item.appendChild(priceh4);
@@ -65,11 +53,13 @@ db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
                 item.appendChild(line);
                 
 
-               
+
+
+
                 i++;
             }
         });
     })
-    .catch(function(error) {
+    .catch(function (error) {
         console.log("Error getting documents: ", error);
     });
