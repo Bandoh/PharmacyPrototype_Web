@@ -14,10 +14,13 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 18px;
-  color: blueviolet;
+  color: #444444;
   display: block;
   transition: 0.3s;
   user-select: none;
+}
+.sidenav a:hover{
+  text-decoration: none;
 }
 
 .sidenav a i {
@@ -25,9 +28,8 @@
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
-  border-left: 10px solid blueviolet;
-  font-size: 20px;
+  border-left: 10px solid #444444;
+  background-color: #d1cfcf;
 }
 
 .holder {

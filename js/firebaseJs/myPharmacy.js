@@ -14,7 +14,7 @@ db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
             var i = 0;
             while (i < doc.data().Stock.length) {
 
-                var overViewList = document.getElementById("mypharmacy");
+                var overViewList = document.getElementById("items");
                 var item = document.createElement('div');
 
                 item.setAttribute("id", "StockItems");
