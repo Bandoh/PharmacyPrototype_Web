@@ -23,6 +23,7 @@
     <script src="../js/customJs/home.js"></script>
 
 
+
     <title>Home</title>
 
 </head>
@@ -38,7 +39,7 @@
                 <a href="#" onclick="myPharmacyPage()">
                     <i class="fa fa-user"></i>
                     My Pharmacy
-                </a>           
+                </a>
                 <a href="#" onclick="settingsPage()">
                     <i class="fa fa-sliders-h"></i>
                     Settings
@@ -69,55 +70,55 @@
                             <div id="singleInput">
                                 <small>Single Medication Input mode</small>
                                 <form action="#" id="newMedication" role="form" method="POST">
-                                    
-                                        <div class="form-group">
-                                            <input class="form-control" type="text" placeholder="Medication">
-                                        </div>
-                                        <div class="form-group">
-                                            <input class="form-control" type="text" id="Price"  placeholder="Ghs 5.50">
-                                        </div>
-                                    
+
                                     <div class="form-group">
-                                            <input class="form-control" id="addToStockBtnSingle" type="submit" value="Add To Stock">
+                                        <input class="form-control" type="text" placeholder="Medication">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" id="Price" placeholder="Ghs 5.50">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <input class="form-control" id="addToStockBtnSingle" type="submit" value="Add To Stock">
                                     </div>
                                 </form>
                             </div>
                             <div id="multipleInput" style="visibility: hidden;">
                                 <small>Multiple Medication Input mode</small>
-                                
-                                    <button class="btn" id="newRow" style="display: block" onclick="newRow()">Add Row</button>
-                                    <form action="#" id="newMedication" role="form" method="POST">
-                                        <div class="row">
-                                            <div class="form-group" id="rowGroup">
-                                                <div class="col-xs-12 col-lg-8" id="products">
-                                                    <input id="medication" class="form-control" type="text" placeholder="Medication">
-                                                </div>
-                                                <div class="col-xs-12 col-lg-4" id="products">
-                                                        <input class="form-control" type="text" placeholder="Price">
-                                                </div>
+
+                                <button class="btn" id="newRow" style="display: block" onclick="newRow()">Add Row</button>
+                                <form action="#" id="newMedication" role="form" method="POST">
+                                    <div class="row">
+                                        <div class="form-group" id="rowGroup">
+                                            <div class="col-xs-12 col-lg-8" id="products">
+                                                <input id="medication" class="form-control" type="text" placeholder="Medication">
+                                            </div>
+                                            <div class="col-xs-12 col-lg-4" id="products">
+                                                <input class="form-control" type="text" placeholder="Price">
                                             </div>
                                         </div>
-                                        
+                                    </div>
 
-                                        <div class="form-group">
-                                            <input class="form-control" id="addToStockBtnMultiple" type="submit" value="Add To Stock">
-                                        </div>
-                                    </form>
-                                
+
+                                    <div class="form-group">
+                                        <input class="form-control" id="addToStockBtnMultiple" type="submit" value="Add To Stock">
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
                         <!--Retrieved Products display here-->
                         <div id="pageText">
                             <div id="mypharmacy">
-                                
-                                    <div id="myPharmHeading">
-                                        <h4>Medication</h4>
-                                        <h4>Price</h4>
-                                        <h4>Available</h4>
-                                    </div>
-                                
+
+                                <div id="myPharmHeading">
+                                    <h4>Medication</h4>
+                                    <h4>Price</h4>
+                                    <h4>Available</h4>
+                                </div>
+
                                 <div class="scrollable" id="items">
-                                
+
                                     <div id="StockItems">
                                         <!--  <h4>Panadol</h4>
                                             <h4>Ghs 24.0</h4>
@@ -127,7 +128,7 @@
                                             </lable>-->
                                     </div>
                                 </div>
-                             
+
                             </div>
                             <div id="contact">
                                 this is Contact
@@ -139,12 +140,47 @@
                                 this is Stock
                             </div>
                             <div id="profile">
-                                <div class="card">
-                                    <img  alt="User Image" style="width:100%;">
-                                    <h1>Pharmacy Name</h1>
-                                    <p class="title">Owner Name</p>
-                                    <p id="profileEmail">Email</p>
-                                        <p><button>Upload Image</button></p>
+                                <div id="profileback"></div>
+                                <div id="contain">
+                                    <div class="card" id="profileimage">
+                                        <img alt="User Image">
+                                        <div id="uploadbtn">
+                                            <button>Upload Image</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="profilecontents">
+                                    <div id="ownerdet">
+                                        <h1>
+                                            Owner Details
+                                        </h1>
+                                        <div id="firstname">
+                                            First Name:
+                                        </div>
+                                        <div id="lastname">
+                                            Last Name:
+                                        </div>
+                                        <div id="personalemail">
+                                            Personal Email:
+                                        </div>
+                                    </div>
+                                    <div id="pharmadet">
+                                        <h1>
+                                            Pharmacy Details
+                                        </h1>
+                                        <div id="pharmacyname">
+                                            Pharmacy Name:
+                                        </div>
+                                        <div id="city">
+                                            City:
+                                        </div>
+                                        <div id="pharmacyemail">
+                                            Pharmacy Email:
+                                        </div>
+                                        <div id="phonenumber">
+                                            Phone Number:
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -178,11 +214,11 @@
                                         <i class="fa fa-youtube"></i>
                                     </a>
                                 </li>
-                            </ul> 
-                            
+                            </ul>
 
-                        </div> 
-                        
+
+                        </div>
+
                         <div class="footer-menu-one">
                             <ul>
                                 <li>
@@ -228,6 +264,7 @@
     <script src="../js/firebaseJs/myPharmacy.js"></script>
     <script src="../js/firebaseJs/profile.js"></script>
     <script src="../js/firebaseJs/addStock.js"></script>
+    <script src="../js/customJs/getprofilecontent.js"></script>
 </body>
 
 </html>

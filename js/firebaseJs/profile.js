@@ -1,7 +1,12 @@
 //get variable
-profileEmail = document.getElementById('profileEmail');
+//supposed to do for rest of fields but i want you to do that auth part
+pharmacyname = document.getElementById('pharmacyname');
+city = document.getElementById('city');
 
-firebase.auth().onAuthStateChanged(function(user) {
+var email ;
+
+
+/*firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         var name, email, photoUrl, uid, emailVerified;
         
@@ -22,5 +27,16 @@ firebase.auth().onAuthStateChanged(function(user) {
     } else {
         console.log('User Absent');
     }
-});
+});*/
+
+var db = firebase.firestore();
+
+db.collection('PharmacyDetails').where("Email","==","rbayor16@gmail.com").get()
+.then(function(queryshot){
+    queryshot.forEach(function(doc){
+        pharmacyname.innerHTML = 'Email: ' + doc.data().Email;
+        city.innerHTML = "City: " + doc.data().City; 
+    })
+})
+console.log(email)
 

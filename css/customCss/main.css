@@ -81,7 +81,7 @@
 
 .tab {
     display: none;
-} 
+}
 
 .step.finish {
     background-color: #4CAF50;
@@ -102,44 +102,78 @@
     background-color: fuchsia;
     display: none;
 }
-#profile{
+
+#profile {
     display: none;
 }
+#pharmadet{
+    margin-left: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.128);
+    display: inline-block;
+    padding: 30px;
+}
+#ownerdet{
+    margin-left: 100px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.128);
+    display: inline-block;
+    padding: 10px;
+}
+#profilecontents{
+    margin-top: 50px;
+}
+#profileback{
+    background-color: rgb(141, 141, 245);
+    height: 200px;
+}
+#contain{
+    margin-top: -100px;
+}
 
+#profileimage {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+#uploadbtn {
+    visibility: hidden;
+    border-radius: 100%;
+    opacity: 0.5;
+    width: 200px;
+    margin-top: 50px;
+}
 .scrollable::-webkit-scrollbar {
     width: 10px;
 }
 
-
 .scrollable::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+    box-shadow: inset 0 0 5px grey;
     border-radius: 20px;
 }
- 
 
 .scrollable::-webkit-scrollbar-thumb {
-    background: #acacac; 
-
+    background: #acacac;
 }
 
 .scrollable::-webkit-scrollbar-thumb:hover {
-    background: grey; 
+    background: grey;
 }
-.scrollable{
-    height: 400px;
+
+.scrollable {
+    height: 100%;
     width: 100%;
     overflow-y: scroll;
     background-color: #fcfcfc;
     border-top: 1px solid #ff1b1b;
 }
 
-#pageText{
+#pageText {
     margin: 30px 10px 10px 10px;
     padding: 20px;
     float: left;
     width: 100%;
 }
-#addProducts{
+
+#addProducts {
     margin: 100px 10px 100px 10px;
     padding: 20px;
     float: left;
@@ -147,33 +181,37 @@
     position: absolute;
     visibility: hidden;
 }
-#addProducts #singleInput{
+
+#addProducts #singleInput {
     position: absolute;
 }
-#addProducts #multipleInput{
+
+#addProducts #multipleInput {
     margin-left: 20px;
 }
-#multipleInput #newMedication #addToStockBtnMultiple{
+
+#multipleInput #newMedication #addToStockBtnMultiple {
     max-width: 250px;
     margin-top: 20px;
     align-self: center;
 }
+
 #addProducts #multipleInput #products {
     float: left;
     padding: 0.5px;
 }
 
-
 #addProducts select {
     margin-bottom: 100px;
 }
 
-#addProducts #addToStockBtnSingle{
+#addProducts #addToStockBtnSingle {
     background-color: dodgerblue;
     color: #fff;
     cursor: pointer;
 }
-#addProducts #addToStockBtnMultiple{
+
+#addProducts #addToStockBtnMultiple {
     background-color: dodgerblue;
     color: #fff;
     cursor: pointer;
@@ -182,11 +220,12 @@
 #addProducts #addToStockBtnSingle:hover {
     background-color: green;
 }
+
 #addProducts #addToStockBtnMultiple:hover {
     background-color: green;
 }
 
-#mypharmacy #myPharmHeading h4{
+#mypharmacy #myPharmHeading h4 {
     float: left;
     width: 33.333%;
     outline: none;
@@ -199,11 +238,11 @@
     cursor: pointer;
 }
 
-#mypharmacy #myPharmHeading h4:hover{
-    background-color: #d7d4d4;  
+#mypharmacy #myPharmHeading h4:hover {
+    background-color: #d7d4d4;
 }
 
-#mypharmacy h4{
+#mypharmacy h4 {
     float: left;
     width: 33.33%;
     padding: 10px;
@@ -218,10 +257,12 @@
     width: 60px;
     height: 28px;
 }
+
 .switch input {
     display: none;
 }
-.slider{
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -232,6 +273,7 @@
     -webkit-transition: .4s;
     transition: 1.5s;
 }
+
 .slider:before {
     position: absolute;
     content: "";
@@ -242,39 +284,45 @@
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: #2196F3;
-  }
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
-  }
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
-  .slider.round {
-    border-radius:30px;
-  }
-  .slider.round:before {
-    border-radius: 50%;
-  }
+}
 
-  /**/
+.slider.round {
+    border-radius: 30px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/**/
+
 #profile .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
     text-align: center;
     font-family: arial;
-  }
-  
+}
+
 #profile .title {
     color: grey;
     font-size: 18px;
-  }
-  
+}
+
 #profile button {
     border: none;
     outline: 0;
@@ -287,14 +335,14 @@
     width: 100%;
     font-size: 18px;
 }
-  
-#profile  a {
+
+#profile a {
     text-decoration: none;
     font-size: 22px;
     color: black;
 }
-  
-#profile  button:hover, a:hover {
+
+#profile button:hover, a:hover {
     opacity: 0.7;
 }
 
