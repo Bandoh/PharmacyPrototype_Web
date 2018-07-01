@@ -113,13 +113,13 @@
     float:right;
     padding: 15px;
     width: 400px;
-    height: 200px;
+    height: 250px;
     margin-left: 250px;
     position: relative;
 }
 
 #ownerdet {
-    height: 200px;
+    height: 250px;
     width: 400px;
     float: left;
     margin-left: 1px;
@@ -129,11 +129,29 @@
 }
 
 #profilecontents {
-    margin-top: -50px;
+    margin-top: -100px;
 }
 
+.edit:hover{
+    color:white;
+    cursor: pointer;
+    opacity: 1;
+}
+.bottombtn{
+    display: inline-block;
+    margin-left: 20px;
+    width: 100px;
+}
+
+.bottom{
+    border-radius: 30px;
+}
+ .edit{
+     opacity: 0.5;
+     
+ }
 #profileback {
-    background-color: rgb(141, 141, 245);
+    background-color: rgb(89, 172, 255);
     height: 200px;
 }
 
