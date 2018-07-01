@@ -37,6 +37,5 @@ db.collection('PharmacyDetails').where("Email","==","rbayor16@gmail.com").get()
         pharmacyname.innerHTML = 'Email: ' + doc.data().Email;
         city.innerHTML = "City: " + doc.data().City; 
     })
-})
-console.log(email)
+});
 
