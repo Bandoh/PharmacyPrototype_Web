@@ -106,31 +106,36 @@
 #profile {
     display: none;
 }
-#pharmadet{
-    margin-top: -160px;
-    margin-left: 675px;
+
+#pharmadet {
+    vertical-align: top;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.128);
-    display: block;
+    display: inline-block;
     padding: 15px;
     width: 400px;
+    height: 200px;
+    margin-left: 250px;
 }
-#ownerdet{
-    margin-top: -100px;
+
+#ownerdet {
+    height: 200px;
     width: 400px;
     margin-left: 1px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.128);
-    display: block;
+    display: inline-block;
     padding: 15px;
 }
-#profilecontents{
-    margin-top: 50px;
-    
+
+#profilecontents {
+    margin-top: -50px;
 }
-#profileback{
+
+#profileback {
     background-color: rgb(141, 141, 245);
     height: 200px;
 }
-#contain{
+
+#contain {
     margin-top: -100px;
 }
 
@@ -139,6 +144,7 @@
     height: 200px;
     width: 200px;
 }
+
 #uploadbtn {
     visibility: hidden;
     border-radius: 100%;
@@ -146,6 +152,7 @@
     width: 200px;
     margin-top: 50px;
 }
+
 .scrollable::-webkit-scrollbar {
     width: 10px;
 }
