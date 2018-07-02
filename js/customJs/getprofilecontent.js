@@ -18,11 +18,4 @@ function chng(){
     }
 }
 
-function save(){
-    console.log('clicked');
-    var chn = document.getElementsByClassName('change');
-    console.log(chn.length);
-    for(var i=0;i<=chn.length;i++){
-        chn[i].readOnly = true;
-    }
-}
+
