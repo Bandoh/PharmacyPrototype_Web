@@ -1,6 +1,7 @@
 document.querySelector("#addToStockBtnSingle").addEventListener("click", function (e) {
     e.preventDefault();
 
+    getStockUpdate();
     addData();
     hideForm();
 
@@ -38,28 +39,30 @@ db = firesbase.firestore();
 
 function addData() {
 
-    let i = 0;
-    do {
-        db
-            .collection('PharmacyDetails')
-            .doc("83645323")
-            .set({
-                Stock: [{
-                    Available: improAvailable[i],
-                    Medication: improvItems[i],
-                    Price: improvPrice[i]
-                }]
-            },{
-                merge: true
-            });
 
-        i++;
-    } while (i < len);
+    console.log(Stock);
+    db
+        .collection('PharmacyDetails')
+        .doc("111")
+        .set({
+            Stock
+        }, {
+            merge: true
+        });
 
 
+}
 
-    console.log(improvItems);
-    console.log(improvPrice);
-    console.log(improAvailable);
-    console.log(len);
+function getStockUpdate() {
+    let Medication = document.getElementById("addNewMedication").value;
+    let Price = Number(document.getElementById("addNewPrice").value);
+    let Available = true;
+
+    let newObj = {
+        Available,
+        Medication,
+        Price
+    };
+
+    Stock.push(newObj);
 }
