@@ -33,11 +33,11 @@ personalmail = document.getElementById('personalemail');
 
 var db = firebase.firestore();
 
-db.collection('PharmacyDetails').where("Email","==","rbayor16@gmail.com").get()
+db.collection('PharmacyDetails').where("Pharmacy_Email","==","rbayor16@gmail.com").get()
 .then(function(queryshot){
     queryshot.forEach(function(doc){
         pharmacymail.style.padding = '1.5px';
-        pharmacymail.setAttribute("value", doc.data().Email);
+        pharmacymail.setAttribute("value", doc.data().Pharmacy_Email);
         city.style.padding = '1.5px';
         city.setAttribute("value", doc.data().City);
         pharmnum.style.padding = '1.5px';

@@ -43,7 +43,7 @@ function addData() {
     console.log(Stock);
     db
         .collection('PharmacyDetails')
-        .doc("111")
+        .doc("11101110")
         .set({
             Stock
         }, {

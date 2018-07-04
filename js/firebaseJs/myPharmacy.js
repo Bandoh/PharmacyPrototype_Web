@@ -7,11 +7,11 @@ firestore.settings(settings);
 var db = firebase.firestore();
 let Stock;
 
-db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
-    .get()
-    .then(function (querySnapshot) {
+db.collection("PharmacyDetails").where("Pharmacy_Email", "==", 'rbayor16@gmail.com')
+    .onSnapshot(function (querySnapshot) {
         querySnapshot.forEach(function (doc) {
 
+            
             var i = 0;
             while (i < doc.data().Stock.length) {
 
