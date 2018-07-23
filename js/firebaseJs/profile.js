@@ -1,6 +1,6 @@
 //get variable
 //supposed to do for rest of fields but i want you to do that auth part
-import * as firebase from 'firebase'
+
 pharmacymail = document.getElementById('pharmacyemail');
 city = document.getElementById('city');
 pharmnum = document.getElementById('phonenumber');

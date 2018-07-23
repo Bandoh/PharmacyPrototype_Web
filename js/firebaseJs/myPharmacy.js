@@ -8,6 +8,7 @@ var db = firebase.firestore();
 let improvItems = new Array();
 let improAvailable = new Array();
 let improvPrice = new Array();
+var stock = new Array();
 var len
 
 db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
