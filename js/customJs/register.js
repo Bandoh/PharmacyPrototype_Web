@@ -1,14 +1,15 @@
-
 const firestore = firebase.firestore();
-const settings = {/* your settings... */ timestampsInSnapshots: true };
+const settings = { /* your settings... */
+    timestampsInSnapshots: true
+};
 firestore.settings(settings);
-const ownerdet = firestore.collection('/OwnerDetails');
-const pharmdet = firestore.collection('/PharmacyDetails');
+
 //when you click the submit button
-document.getElementById('registerForm').onsubmit = function(e){
+document.getElementById('registerForm').onsubmit = function (e) {
     e.preventDefault();
 
-    
+
+
     //get values
     const ownerFName = getData('ownerFName');
     const ownerLName = getData('ownerLName');
@@ -20,22 +21,24 @@ document.getElementById('registerForm').onsubmit = function(e){
     const phRegistrationNo = getData('phRegistrationNumber');
     const phRegistrationDate = getData('phRegistrationDate');
 
+
     // TODO: Validate data before sending out to firebase
 
-    //saveOwnerData(ownerFName, ownerLName, ownerEmail, phName);
-    //savePhData(phName, phEmail, phRegistrationNo, phRegistrationDate);
-    createUser(phEmail, password);
-
-
-    console.log('form submitted');   
+    //createUser(phEmail, password);
+    saveOwnerData(ownerFName, ownerLName, ownerEmail, phName, phRegistrationNo);
+    savePhData(phName, phEmail, phRegistrationNo, phRegistrationDate);
     
+
+
+    console.log('form submitted');
+
     window.setTimeout(loadLogin, 3000);
-    
+
 }
 
-function createUser(useremail, userpass){
+function createUser(useremail, userpass) {
 
-    firebase.auth().createUserWithEmailAndPassword(useremail, userpass).catch(function(error) {
+    firebase.auth().createUserWithEmailAndPassword(useremail, userpass).catch(function (error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
@@ -45,39 +48,43 @@ function createUser(useremail, userpass){
 
 
 // Store owner details
-function saveOwnerData(fname,lname,email,pharmName) {
-    ownerdet.add({
-        First_Name: fname,
-        Last_Name: lname,
-        Owner_Email: email,
-        Pharmacy_Name : pharmName,
-    }).then(function(){
-        console.log("Saved Owner Details")
-    }).catch(function(err){
-        console.log(err);
-    });
+function saveOwnerData(ownerFName, ownerLName, ownerEmail, phName, phRegistrationNo) {
+    firestore.collection('/OwnerDetails')
+        .doc(phRegistrationNo)
+        .set({
+            First_Name: ownerFName,
+            Last_Name: ownerLName,
+            Owner_Email: ownerEmail,
+            Pharmacy_Name: phName,
+        }).then(function () {
+            console.log("Saved Owner Details")
+        }).catch(function (err) {
+            console.log(err);
+        });
 }
 
 // Store pharmacy details in database
-function savePhData(phname,phemail,phregnumber,phregdate) {
-    pharmdet.add({
-        Pharmacy_Name : phname,
-        Pharmacy_Email: phemail,
-        Registration_Number : phregnumber,
-        Registration_Date : phregdate,
-    }).then(function(){
-        console.log("Saves Pharmacy Details")
-    }).catch(function(err){
-        console.log(err);
-    });
+function savePhData(phName, phEmail, phRegistrationNo, phRegistrationDate) {
+    firestore.collection('/PharmacyDetails')
+        .doc(phRegistrationNo)
+        .set({
+            Pharmacy_Name: phName,
+            Pharmacy_Email: phEmail,
+            Registration_Number: phRegistrationNo,
+            Registration_Date: phRegistrationDate,
+        }).then(function () {
+            console.log("Saves Pharmacy Details")
+        }).catch(function (err) {
+            console.log(err);
+        });
 
 }
 
 //Function to get values from form
 function getData(id) {
     return document.getElementById(id).value;
-} 
+}
 // Load login form after registration complete
-function loadLogin(){
-    window.open("./index.html","_self");
+function loadLogin() {
+    window.open("./index.html", "_self");
 }

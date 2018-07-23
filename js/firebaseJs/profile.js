@@ -34,6 +34,7 @@ personalmail = document.getElementById('personalemail');
 
 var db = firebase.firestore();
 
+<<<<<<< HEAD
 db.collection('PharmacyDetails').where("Email", "==", "rbayor16@gmail.com").get()
     .then(function (queryshot) {
         queryshot.forEach(function (doc) {
@@ -59,6 +60,20 @@ db.collection('OwnerDetails').where("First_Name", "==", "Kelvin").get()
             personalmail.style.padding = '1.5px';
             personalmail.setAttribute('value', doc.data().Owner_Email);
         })
+=======
+db.collection('PharmacyDetails').where("Pharmacy_Email","==","rbayor16@gmail.com").get()
+.then(function(queryshot){
+    queryshot.forEach(function(doc){
+        pharmacymail.style.padding = '1.5px';
+        pharmacymail.setAttribute("value", doc.data().Pharmacy_Email);
+        city.style.padding = '1.5px';
+        city.setAttribute("value", doc.data().City);
+        pharmnum.style.padding = '1.5px';
+        pharmnum.setAttribute('value',doc.data().PhoneNumber);
+        pharmname.style.padding = '1.5px';
+        pharmname.setAttribute('value',doc.data().PharmacyName);
+       
+>>>>>>> 32b3761e85d9da92f3712fe170ffcf6079a113ee
     })
 
 

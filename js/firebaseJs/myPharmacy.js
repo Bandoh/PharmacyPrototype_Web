@@ -5,6 +5,7 @@ const settings = { /* your settings... */
 firestore.settings(settings);
 
 var db = firebase.firestore();
+<<<<<<< HEAD
 let improvItems = new Array();
 let improAvailable = new Array();
 let improvPrice = new Array();
@@ -14,10 +15,16 @@ var len
 db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
     .get()
     .then(function (querySnapshot) {
+=======
+let Stock;
+
+db.collection("PharmacyDetails").where("Pharmacy_Email", "==", 'rbayor16@gmail.com')
+    .onSnapshot(function (querySnapshot) {
+>>>>>>> 32b3761e85d9da92f3712fe170ffcf6079a113ee
         querySnapshot.forEach(function (doc) {
 
+            
             var i = 0;
-            len = doc.data().Stock.length;
             while (i < doc.data().Stock.length) {
 
                 var overViewList = document.getElementById("items");
@@ -39,9 +46,6 @@ db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
                 var avaspan = document.createElement('span');
                 var line = document.createElement('hr');
 
-                improvItems.push(med);
-                improAvailable.push(isAvailable);
-                improvPrice.push(price);
                 //console.log(med);
 
                 avalbl.setAttribute("class", "switch");
@@ -71,6 +75,9 @@ db.collection("PharmacyDetails").where("Email", "==", 'rbayor16@gmail.com')
 
                 i++;
             }
+
+            Stock = doc.data().Stock;
+
         });
     }).then(function(){
         /*console.log(improvItems);
